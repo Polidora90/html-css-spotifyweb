@@ -69,6 +69,10 @@ nav .fa {
     font-size: 25px;
 }
 
+nav img {
+    width: 25px;
+}
+
 .playlist-section {
     flex-grow: 1;
     overflow: scroll;
@@ -98,6 +102,11 @@ nav i {
     margin: 4px 0;
 }
 
+
+/* UPGRADE SECTION */
+.upgrade-section {
+
+}
 
 /* FOOTER */
 footer {
