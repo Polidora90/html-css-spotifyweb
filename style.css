@@ -6,6 +6,7 @@
 
 html {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
 }
 
 ul {
@@ -18,6 +19,14 @@ ul {
     overflow: hidden;
 }
 
+
+.text-grey {
+    color: #a3a3a3;
+}
+
+.text-white {
+    color: white;
+}
 /* MAIN */
 
 main {
@@ -36,12 +45,13 @@ nav {
 }
 
 nav a {
-    color: #a3a3a3;
     text-decoration: none;
+    color: #a3a3a3
 }
 
 nav .nav-cta-text {
     display: none;
+    font-size: 14px;
 }
 
 .nav-logo-small {
@@ -61,10 +71,20 @@ nav .fa {
 
 .playlist-section {
     flex-grow: 1;
+    overflow: scroll;
+}
+
+.playlist-section::-webkit-scrollbar {
+    display: none;
+}
+
+.playlist-section ul,
+.playlist-section h4 {
+    display: none;
 }
 
 nav .user {
-    height: 50px;
+    height: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,6 +93,11 @@ nav .user {
 nav .user a:first-of-type .fa {
     font-size: 14px;
 }
+
+nav i {
+    margin: 4px 0;
+}
+
 
 /* FOOTER */
 footer {
@@ -88,6 +113,22 @@ nav li {
     color: burlywood;
 }
 
-.playlist-section {
-    overflow: scroll;
+
+@media screen and (min-width: 768px) {
+
+    /* nav */
+    nav {
+        align-items: flex-start;
+        width: 250px;
+        padding: 10px 0 0 13px;
+    }
+
+    nav .nav-cta-text {
+        display: inline-block;
+    }
+
+    .playlist-section ul,
+    .playlist-section h4 {
+        display: block;
+    }
 }
