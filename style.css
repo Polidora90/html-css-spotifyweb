@@ -13,12 +13,29 @@ ul {
     list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* users classes */
 
 .over-hidden {
     overflow: hidden;
 }
 
+.over-scroll {
+    overflow: scroll;
+}
+
+.over-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 .text-grey {
     color: #a3a3a3;
@@ -31,6 +48,7 @@ ul {
 
 main {
     height: calc(100vh - 90px);
+    display: flex;
 }
 
 /* NAV */
@@ -45,7 +63,6 @@ nav {
 }
 
 nav a {
-    text-decoration: none;
     color: #a3a3a3
 }
 
@@ -75,12 +92,12 @@ nav img {
 
 .playlist-section {
     flex-grow: 1;
-    overflow: scroll;
+    /* overflow: scroll; */
 }
 
-.playlist-section::-webkit-scrollbar {
+/* .playlist-section::-webkit-scrollbar {
     display: none;
-}
+} */
 
 .playlist-section ul,
 .playlist-section h4 {
@@ -103,9 +120,26 @@ nav i {
 }
 
 
+/* CENTRAL SECTION */
+.central-section {
+    background-color: #141922;
+    width: calc(100vw - 60px);
+}
+
 /* UPGRADE SECTION */
 .upgrade-section {
+    background-color: #080b12;
+    height: 80px;
+}
 
+.upgrade-btn {
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px 30px;
+
+    float: right;
+    position: relative;
+    top: 20px;
 }
 
 /* FOOTER */
