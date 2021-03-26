@@ -6,7 +6,7 @@
 
 html {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 ul {
@@ -50,7 +50,7 @@ a {
 }
 
 .spaced-text {
-    padding: 15px 10px;
+    padding-right: 20px;
     display: inline-block;
 }
 /* MAIN */
@@ -101,7 +101,6 @@ nav img {
 
 .playlist-section {
     flex-grow: 1;
-    /* overflow: scroll; */
 }
 
 
@@ -126,11 +125,6 @@ nav i {
 }
 
 
-/* CENTRAL SECTION */
-.central-section {
-    background-color: #141922;
-    width: calc(100vw - 60px);
-}
 
 /* UPGRADE SECTION */
 .upgrade-section {
@@ -148,6 +142,38 @@ nav i {
     position: relative;
     top: 20px;
 }
+
+/* CENTRAL SECTION */
+.central-section {
+    background-color: #141922;
+    width: calc(100vw - 60px);
+}
+
+.playlist-container {
+    padding: 15px;
+}
+
+.playlist-row {
+    margin-right: -8px;
+    margin-left: -8px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.playlist-row img {
+    width: 100%;
+}
+
+.playlist-box {
+    padding: 8px;
+    width: 50%;
+    float: left;
+}
+
+.go-to-head {
+    width: 100%;
+}
+
 
 /* FOOTER */
 footer {
@@ -258,11 +284,27 @@ footer {
     .track-player a {
         display: inline;
     }
+
+    /* .playlist-box {
+        flex-basis: calc(100% / 4); 
+    } */
 }
 
 
 @media screen and (min-width: 768px) {
     .extra-controls {
     width: 200px;
+    }
+}
+
+@media screen and (min-width: 970px) {
+    .go-to-head {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1170px) {
+    .go-to-head {
+        width: calc(100% / 3);
     }
 }
