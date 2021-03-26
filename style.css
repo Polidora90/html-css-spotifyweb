@@ -17,7 +17,7 @@ a {
     text-decoration: none;
 }
 
-/* users classes */
+/* utility classes */
 
 .over-hidden {
     overflow: hidden;
@@ -43,6 +43,15 @@ a {
 
 .text-white {
     color: white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.spaced-text {
+    padding: 15px 10px;
+    display: inline-block;
 }
 /* MAIN */
 
@@ -95,9 +104,6 @@ nav img {
     /* overflow: scroll; */
 }
 
-/* .playlist-section::-webkit-scrollbar {
-    display: none;
-} */
 
 .playlist-section ul,
 .playlist-section h4 {
@@ -136,6 +142,7 @@ nav i {
     border: 1px solid white;
     border-radius: 20px;
     padding: 10px 30px;
+    margin-right: 3px;
 
     float: right;
     position: relative;
@@ -146,14 +153,77 @@ nav i {
 footer {
     height: 90px;
     background-color: #282828;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.track-played-img {
+    width: 55px;
+}
+
+.track-played-img img {
+    width: 100%;
+}
+
+.track-player {
+    display: flex;
+    align-items: center;
+}
+
+.track-player a {
+    display: block;
+}
+
+.player {
+    flex-grow: 1;
+    height: 80px;
+}
+
+.player-controls {
+    max-width: 45%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.player-bar-container {
+    max-width: 65%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.player-bar {
+    height: 4px;
+    width: 100%;
+    margin: 0 5px;
+    background-color: #5a5a5a;
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 25%;
+    background-color: #a3a3a3;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.extra-controls {
+    height: 80px;
 }
 
 
 
 
+
 /* prove */
-nav li {
-    color: burlywood;
+
+.border {
+    border: 1px solid white;
 }
 
 
@@ -173,5 +243,9 @@ nav li {
     .playlist-section ul,
     .playlist-section h4 {
         display: block;
+    }
+
+    .track-player a {
+        display: inline;
     }
 }
