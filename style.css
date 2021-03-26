@@ -103,6 +103,10 @@ nav img {
     flex-grow: 1;
 }
 
+/* .pippo {
+    height: 100%;
+} */
+
 
 .playlist-section ul,
 .playlist-section h4 {
@@ -174,6 +178,9 @@ nav i {
     width: 100%;
 }
 
+.playlist-album-img img {
+    border-radius: 50%;
+}
 
 /* FOOTER */
 footer {
