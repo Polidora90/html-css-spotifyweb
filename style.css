@@ -66,6 +66,10 @@ a {
 .hover-white:hover {
     color: white;
 }
+
+.round-img {
+    border-radius: 50%;
+}
 /* MAIN */
 
 main {
@@ -82,6 +86,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: auto;
 }
 
 nav a {
@@ -131,6 +136,7 @@ nav .fa {
 .playlist-section {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 .playlist-section ul {
@@ -224,6 +230,30 @@ nav i {
     top: 20px;
 }
 
+.upgrade-btn:hover {
+    font-size: 13px;
+}
+
+.playlist-container span {
+    display: inline-block;
+    position: relative;
+}
+
+.playlist-container span:hover > .green-bar {
+    display: inline-block;
+}
+
+.green-bar {
+    display: inline-block;
+    height: 3px;
+    width: 25px;
+    background-color: #a1ed2e;
+    position: absolute;
+    top: 50%;
+    right: 45%;
+    display: none;
+}
+
 /* CENTRAL SECTION */
 .central-section {
     background-color: #141922;
@@ -255,9 +285,7 @@ nav i {
     width: 100%;
 }
 
-.playlist-album-img img {
-    border-radius: 50%;
-}
+
 
 .playlist-container h2 {
     font-size: 25px;
@@ -268,6 +296,34 @@ nav i {
 .playlist-container h4 {
     font-size: 14px;
     padding: 7px 0;
+}
+
+.playlist-album-img {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #00000077;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.overlay .fa {
+    font-size: 40px;
+}
+
+.playlist-box:hover .overlay {
+    visibility: visible;
 }
 
 /* FOOTER */
