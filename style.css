@@ -51,7 +51,12 @@ a {
 
 .spaced-text {
     padding-right: 20px;
+    padding-bottom: 30px;
     display: inline-block;
+}
+
+.hover-white:hover {
+    color: white;
 }
 /* MAIN */
 
@@ -78,47 +83,96 @@ nav a {
 nav .nav-cta-text {
     display: none;
     font-size: 14px;
+    padding-left: 7px;
+    line-height: 32px;
+    vertical-align: top;
 }
 
 .nav-logo-small {
-    width: 40px;
-    padding: 5px;
+    width: 50px;
+    padding: 5px 7px;
 }
 
 .nav-logo {
-    width: 180px;
-    padding: 15px;
+    width: 155px;
+    padding: 15px 0;
     display: none;
 }
 
-nav .fa {
-    font-size: 25px;
+.nav-cta {
+    padding: 10px 0;
 }
 
-nav img {
-    width: 25px;
+.nav-cta li {
+    padding: 2px 0;
+}
+
+.nav-cta img {
+    width: 32px;
+}
+
+nav .fa {
+    font-size: 50px;
+    padding-right: 7px;
+}
+
+.nav-logo-small img {
+    width: 100%;
 }
 
 .playlist-section {
     flex-grow: 1;
 }
 
-/* .pippo {
-    height: 100%;
-} */
-
+.playlist-section h4 {
+    font-size: 15px;
+    padding: 10px 0;
+}
 
 .playlist-section ul,
 .playlist-section h4 {
     display: none;
 }
 
+.playlist-section li:not(:first-child) {
+    padding: 15px 0;
+}
+
+.make-playlist {
+    font-size: 14px;
+}
+
+.make-playlist span {
+    vertical-align: text-bottom;
+    line-height: 39px;
+}
+
 nav .user {
-    height: 60px;
+    height: 75px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
 }
+
+.download-logo {
+    width: 17px;
+}
+
+.user-logo {
+    width: 100%;
+}
+
+.user-logo-container {
+    display: inline-block;
+    background-color: #808080;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;;
+}
+
+
 
 nav .user a:first-of-type .fa {
     font-size: 14px;
@@ -126,6 +180,16 @@ nav .user a:first-of-type .fa {
 
 nav i {
     margin: 4px 0;
+}
+
+.nav-cta img,
+.download-logo {
+    opacity: 0.7;
+}
+
+.nav-cta img:hover,
+.download-logo:hover {
+    opacity: unset;
 }
 
 
@@ -180,6 +244,16 @@ nav i {
 
 .playlist-album-img img {
     border-radius: 50%;
+}
+
+.playlist-container h2 {
+    font-size: 25px;
+    padding-bottom: 7px;
+    padding-top: 15px;
+}
+
+.playlist-container p {
+    padding-bottom: 15px;
 }
 
 /* FOOTER */
@@ -276,7 +350,7 @@ footer {
     nav {
         align-items: flex-start;
         width: 250px;
-        padding: 10px 0 0 13px;
+        padding: 10px;
     }
 
     nav .nav-cta-text {
@@ -292,6 +366,35 @@ footer {
         display: inline;
     }
 
+    .nav-logo-small {
+        display: none;
+    }
+
+    .nav-logo {
+        display: inline-block;
+    }
+
+    nav .user {
+        width: 100%;
+        align-items: unset;
+    }
+
+    .download-container {
+        border-bottom: 1px solid #808080;
+        padding-bottom: 5px;
+    }
+
+    .download-logo {
+        vertical-align: middle;
+    }
+
+    .download-container span {
+        vertical-align: middle;
+    }
+
+    .user>a {
+        padding-top: 12px;
+    }
     /* .playlist-box {
         flex-basis: calc(100% / 4); 
     } */
